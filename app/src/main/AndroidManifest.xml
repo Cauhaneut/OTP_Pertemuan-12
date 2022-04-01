@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="com.ysn.belajarotp">
+          xmlns:tools="http://schemas.android.com/tools" package="com.rohit_pert12.otp">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_SMS"/>
@@ -14,7 +14,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.rohit_pert12.otp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".SmsReceiver" android:permission="android.permission.BROADCAST_SMS">
+        <receiver android:name="com.rohit_pert12.otp.SmsReceiver" android:permission="android.permission.BROADCAST_SMS">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
             </intent-filter>
